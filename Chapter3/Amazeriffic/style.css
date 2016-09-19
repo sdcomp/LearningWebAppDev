@@ -50,3 +50,30 @@ footer .sitemap {
   float: right;
   width: 285px;
 }
+
+main .container-2 {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+main p {
+  margin: 0;
+}
+
+.column-left, .column-center, .column-right {  
+  width: 275px;
+}
+.column-left {
+  float: left;
+}
+
+.column-center {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+
+}
+
+.column-right {
+  float: right;
+}
