@@ -1,31 +1,31 @@
 var main = function() {
-    "use strict";
+    'use strict';
     var addCommentFromInputBox = function(userID) {
-        var $userInput = $("#" + userID + "-user-input"),
-            $new_comment;
+        var $userInput = $('#' + userID + '-user-input'),
+            $newComment;
 
         //check input is not empty
-        if ($userInput.val() !== "") {
+        if ($userInput.val() !== '') {
             //create and add text with p element object
-            $new_comment = $("<p>").text(userID + " user: " +
+            $newComment = $('<p>').text(userID + ' user: ' +
                 $userInput.val());
             //add class to object
-            if (userID === "first") {
-                $new_comment.addClass("first-user-comments");
+            if (userID === 'first') {
+                $newComment.addClass('first-user-comments');
             } else {
-                $new_comment.addClass("second-user-comments");
+                $newComment.addClass('second-user-comments');
             }            
-            $new_comment.hide();
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $userInput.val("");
+            $newComment.hide();
+            $('.comments').append($newComment);
+            $newComment.fadeIn();
+            $userInput.val('');
         }
     };
-    $("#first-user-button").on("click", function(event) {
-        addCommentFromInputBox("first");
+    $('#first-user-button').on('click', function() {
+        addCommentFromInputBox('first');
     });
-    $("#second-user-button").on("click", function(event) {
-        addCommentFromInputBox("second");
+    $('#second-user-button').on('click', function() {
+        addCommentFromInputBox('second');
     });
 };
 $(document).ready(main);
