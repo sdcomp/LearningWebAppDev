@@ -1,27 +1,31 @@
-var main = function () {
+var main = function() {
     "use strict";
+    var addCommentFromInputBox = function(userID) {
+        var $userInput = $("#" + userID + "-user-input"),
+            $new_comment;
 
-    var addCommentFromInputBox = function () {
-        var $new_comment;
-
-        if ($(".comment-input input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input input").val());
+        //check input is not empty
+        if ($userInput.val() !== "") {
+            //create and add text with p element object
+            $new_comment = $("<p>").text(userID + " user: " +
+                $userInput.val());
+            //add class to object
+            if (userID === "first") {
+                $new_comment.addClass("first-user-comments");
+            } else {
+                $new_comment.addClass("second-user-comments");
+            }            
             $new_comment.hide();
             $(".comments").append($new_comment);
             $new_comment.fadeIn();
-            $(".comment-input input").val("");
+            $userInput.val("");
         }
     };
-
-    $(".comment-input button").on("click", function (event) {
-        addCommentFromInputBox();
+    $("#first-user-button").on("click", function(event) {
+        addCommentFromInputBox("first");
     });
-
-    $(".comment-input input").on("keypress", function (event) {
-        if (event.keyCode === 13) {
-            addCommentFromInputBox();
-        }
+    $("#second-user-button").on("click", function(event) {
+        addCommentFromInputBox("second");
     });
 };
-
 $(document).ready(main);

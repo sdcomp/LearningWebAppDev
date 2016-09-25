@@ -6,83 +6,85 @@
 body {
     width: 855px;
     margin: auto;
-    background: ivory;
+    background: #fffff0;
     font-size: 100%;
     font-family: sans-serif;
 }
 
 header {
-  overflow: auto;
-  border-bottom: 1px solid darkslategray;
+    overflow: auto;
+    border-bottom: 1px solid #2f4f4f;
 }
 
 h1 {
-  float: left;
+    float: left;
 }
 
-
 header p {
-  float: right;
-  width: 570px;
-  font-style: italic;
-  margin-top: 10px;
+    float: right;
+    width: 570px;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 main {
-  overflow: auto;
-  padding: 30px 0;
-  border-bottom: 1px solid darkslategray;
+    overflow: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #2f4f4f;
 }
 
-
 .comment-input {
-  float: left;
-  width: 285px;
+    float: left;
+    width: 285px;
 }
 
 .comment-input p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .comment-input input {
-  width: 80%;
-  height: 30px;
-  font-size: 1.2em;
-  font-weight: bold;
+    width: 80%;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 .comment-input button {
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 5px;
-  color: ivory;
-  background: olivedrab;
-  cursor: pointer;
-  font-size: 1.5em;
-  margin-left: 5px;
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 5px;
+    color: #fffff0;
+    background: #6b8e23;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 5px;
 }
 
 .comments {
-  float: right;
-  width: 570px;
+    float: right;
+    width: 570px;
 }
 
 .comments p {
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.comments p:nth-child(even) {
-    background: lavender;
+.comments .first-user-comments {
+    background: #e6e6fa;
 }
 
-.comments p:nth-child(odd) {
-    background: gainsboro;
+.comments .second-user-comments {
+    background: #dcdcdc;
 }
 
 footer {
     font-size: smaller;
     margin-top: 5px;
     clear: both;
+}
+
+.comment-input div:first-child {
+    margin-bottom: 3em;
 }
