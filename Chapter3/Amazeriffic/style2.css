@@ -1,5 +1,7 @@
 .column {
 	max-width: 750px;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .field label {
