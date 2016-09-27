@@ -72,11 +72,11 @@ main {
 }
 
 .comments .first-user-comments {
-    background: #e6e6fa;
+    background: green;
 }
 
 .comments .second-user-comments {
-    background: #dcdcdc;
+    background: violet;
 }
 
 footer {
