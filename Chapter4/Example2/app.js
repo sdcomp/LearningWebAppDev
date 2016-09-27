@@ -24,8 +24,21 @@ var main = function() {
     $('#first-user-button').on('click', function() {
         addCommentFromInputBox('first');
     });
+
+    $('#first-user-input').on('keypress', function (event) {
+        if (event.keyCode === 13) {
+            addCommentFromInputBox('first');
+        }
+    });
+
     $('#second-user-button').on('click', function() {
         addCommentFromInputBox('second');
+    });
+
+    $('#second-user-input').on('keypress', function (event) {
+        if (event.keyCode === 13) {
+            addCommentFromInputBox('first');
+        }
     });
 };
 $(document).ready(main);
