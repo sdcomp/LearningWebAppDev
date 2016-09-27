@@ -37,7 +37,7 @@ var main = function() {
 
     $('#second-user-input').on('keypress', function (event) {
         if (event.keyCode === 13) {
-            addCommentFromInputBox('first');
+            addCommentFromInputBox('second');
         }
     });
 };
