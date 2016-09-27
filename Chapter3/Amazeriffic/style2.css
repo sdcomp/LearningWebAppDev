@@ -1,0 +1,7 @@
+.column {
+	max-width: 750px;
+}
+
+.field label {
+	text-align: left;
+}
