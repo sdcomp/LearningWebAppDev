@@ -7,3 +7,9 @@
 .field label {
 	text-align: left;
 }
+
+#signupForm {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: grey;
+}
